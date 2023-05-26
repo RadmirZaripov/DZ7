@@ -27,6 +27,7 @@ public class StatsServiceTest {
 
 
     }
+
     @Test
     public void testMonthMaximumSale() {
         StatsService service = new StatsService();
@@ -38,6 +39,7 @@ public class StatsServiceTest {
 
 
     }
+
     @Test
     public void testMonthMinimumSale() {
         StatsService service = new StatsService();
@@ -49,6 +51,7 @@ public class StatsServiceTest {
 
 
     }
+
     @Test
     public void testMonthOverAverage() {
         StatsService service = new StatsService();
@@ -60,6 +63,7 @@ public class StatsServiceTest {
 
 
     }
+
     @Test
     public void testMonthBelowAverage() {
         StatsService service = new StatsService();

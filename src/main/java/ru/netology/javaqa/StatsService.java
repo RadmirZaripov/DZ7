@@ -26,8 +26,9 @@ public class StatsService {
                 month = i;
             }
         }
-            return month + 1;//номер месяца, в котором был пик продаж
-        }
+        return month + 1;//номер месяца, в котором был пик продаж
+    }
+
     public int monthMinimumSale(long[] sales) {
         int month = 0;
         for (int i = 0; i < sales.length; i++) {
@@ -37,16 +38,18 @@ public class StatsService {
         }
         return month + 1;//номер месяца, в котором был минимум продаж
     }
-        public int monthsOverAverage(long[] sales){
-            int counter = 0;
-            long averageSale = average(sales);
-            for (long sale : sales) {
-                if (sale > averageSale)
-                    counter++;
-            }
-            return counter;//количество месяцев, в которых продажи были выше среднего
-            }
-    public int monthsBelowAverage(long[] sales){
+
+    public int monthsOverAverage(long[] sales) {
+        int counter = 0;
+        long averageSale = average(sales);
+        for (long sale : sales) {
+            if (sale > averageSale)
+                counter++;
+        }
+        return counter;//количество месяцев, в которых продажи были выше среднего
+    }
+
+    public int monthsBelowAverage(long[] sales) {
         int counter = 0;
         long averageSale = average(sales);
         for (long sale : sales) {
